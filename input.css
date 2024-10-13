@@ -1,0 +1,151 @@
+body, html{
+    width: 98%;
+    height: 98%;
+    background-color: lightskyblue;
+    font-family: Great Vibes, cursive;
+}
+#main{
+    width: 1100px;
+    height: 800px;
+    border: 5px solid white;
+    border-color: white;
+    position: relative;
+    left: 400px;
+}
+#vlogo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0px;
+}
+#clogo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0px;
+    left: 800px;
+}
+#vcet{
+    position: relative;
+    top: -150px;
+    left: 160px;  
+    font-size: 26px;
+    line-height: 1.4;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#dept{
+    position: relative;
+    top: -10px;
+    left: 175px;  
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#class{
+    position: relative;
+    top: -10px;
+    left: 20px;  
+    font-size: 25px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#batch{
+    position: relative;
+    top: -63px;
+    left: 800px;  
+    font-size: 25px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+h1{
+    position: relative;
+    top: -40px;
+    left: 285px;  
+    font-size: 25px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#input{
+    width: 550px;
+    height: 300px;
+    border: 3px solid white;
+    border-radius: 20px;
+    position: relative;
+    top: 0px;
+    left: 275px;
+}
+#sem{
+    font-size: 30px;
+    position: relative;
+    top: 25px;
+    left: 40px;
+}
+#semester{
+    width: 260px;
+    font-size: 25px;
+    position: relative;
+    top: 22px;
+    left: 90px;
+    font-family: Great Vibes, cursive;
+}
+#stf{
+    font-size: 30px;
+    position: relative;
+    top: 25px;
+    left: 40px;
+}
+#staff{
+    width: 260px;
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    top: 22px;
+    left: 50px;
+    font-family: Great Vibes, cursive;
+}
+#dt{
+    font-size: 30px;
+    position: relative;
+    top: 25px;
+    left: 40px;
+}
+#date{
+    width: 260px;
+    font-size: 22px;
+    position: relative;
+    top: 22px;
+    left: 150px;
+    font-family: Great Vibes, cursive;
+}
+#hr{
+    font-size: 30px;
+    position: relative;
+    top: 25px;
+    left: 40px;
+}
+#time{
+    width: 260px;
+    font-size: 25px;
+    position: relative;
+    top: 22px;
+    left: 130px;
+    font-family: Great Vibes, cursive;
+}
+#button{
+    width: 200px;
+    height: 50px;
+    font-family: Great Vibes, cursive;
+    font-size: 22px;
+    border: 2px solid black;
+    border-color: black;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    top: 32px;
+    left: 450px;
+}

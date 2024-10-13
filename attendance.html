@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attendance</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="attendance.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="college" style="height: 143px;">
+                <img id="vlogo" src="VCET Logo.jpg" alt="Image Not Found">
+                <img id="clogo" src="CSE LOGO.jpg" alt="Image Not Found">
+                <pre id="vcet">VELAMMAL COLLEGE OF ENGINEERING AND TECHNOLOGY
+                       AUTONOMOUS
+                          MADURAI</pre>
+            </div>
+            <hr>
+                
+            <h1>ENTER ATTENDANCE</h1>
+            
+            <h3>DATE : <span id="dateDisplay"></span></h3>
+            <h3 id="hr">HOUR : <span id="hourDisplay"></span></h3>
+                        
+            <table>
+            <thead>
+                <tr>
+                    <th>Roll Num</th>
+                    <th>Name</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                    <th>Leave</th>
+                    <th>On Duty</th>
+                    <th>Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>23CSEB01</td>
+                    <td>Amritha B</td>
+                    <td><input type="radio" name="attendance1" value="present" onclick="disableReason(1)"></td>
+                    <td><input type="radio" name="attendance1" value="absent" onclick="enableReason(1)"></td>
+                    <td><input type="radio" name="attendance1" value="leave" onclick="enableReason(1)"></td>
+                    <td><input type="radio" name="attendance1" value="onduty" onclick="enableReason(1)"></td>
+                    <td><textarea id="reason1"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB02</td>
+                    <td>Anushri B</td>
+                    <td><input type="radio" name="attendance2" value="present" onclick="disableReason(2)"></td>
+                    <td><input type="radio" name="attendance2" value="absent" onclick="enableReason(2)"></td>
+                    <td><input type="radio" name="attendance2" value="leave" onclick="enableReason(2)"></td>
+                    <td><input type="radio" name="attendance2" value="onduty" onclick="enableReason(2)"></td>
+                    <td><textarea id="reason2"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB03</td>
+                    <td>Azhagu Meena G</td>
+                    <td><input type="radio" name="attendance3" value="present" onclick="disableReason(3)"></td>
+                    <td><input type="radio" name="attendance3" value="absent" onclick="enableReason(3)"></td>
+                    <td><input type="radio" name="attendance3" value="leave" onclick="enableReason(3)"></td>
+                    <td><input type="radio" name="attendance3" value="onduty" onclick="enableReason(3)"></td>
+                    <td><textarea id="reason3"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB04</td>
+                    <td>Devis Aruna Devi D</td>
+                    <td><input type="radio" name="attendance4" value="present" onclick="disableReason(4)"></td>
+                    <td><input type="radio" name="attendance4" value="absent" onclick="enableReason(4)"></td>
+                    <td><input type="radio" name="attendance4" value="leave" onclick="enableReason(4)"></td>
+                    <td><input type="radio" name="attendance4" value="onduty" onclick="enableReason(4)"></td>
+                    <td><textarea id="reason4"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB05</td>
+                    <td>Dhanya johnsy AR</td>
+                    <td><input type="radio" name="attendance5" value="present" onclick="disableReason(5)"></td>
+                    <td><input type="radio" name="attendance5" value="absent" onclick="enableReason(5)"></td>
+                    <td><input type="radio" name="attendance5" value="leave" onclick="enableReason(5)"></td>
+                    <td><input type="radio" name="attendance5" value="onduty" onclick="enableReason(5)"></td>
+                    <td><textarea id="reason5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB06</td>
+                    <td>Gopika Rani A M</td>
+                    <td><input type="radio" name="attendance6" value="present" onclick="disableReason(6)"></td>
+                    <td><input type="radio" name="attendance6" value="absent" onclick="enableReason(6)"></td>
+                    <td><input type="radio" name="attendance6" value="leave" onclick="enableReason(6)"></td>
+                    <td><input type="radio" name="attendance6" value="onduty" onclick="enableReason(6)"></td>
+                    <td><textarea id="reason6"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB07</td>
+                    <td>Harini T</td>
+                    <td><input type="radio" name="attendance7" value="present" onclick="disableReason(7)"></td>
+                    <td><input type="radio" name="attendance7" value="absent" onclick="enableReason(7)"></td>
+                    <td><input type="radio" name="attendance7" value="leave" onclick="enableReason(7)"></td>
+                    <td><input type="radio" name="attendance7" value="onduty" onclick="enableReason(7)"></td>
+                    <td><textarea id="reason7"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB08</td>
+                    <td>INIYA M</td>
+                    <td><input type="radio" name="attendance8" value="present" onclick="disableReason(8)"></td>
+                    <td><input type="radio" name="attendance8" value="absent" onclick="enableReason(8)"></td>
+                    <td><input type="radio" name="attendance8" value="leave" onclick="enableReason(8)"></td>
+                    <td><input type="radio" name="attendance8" value="onduty" onclick="enableReason(8)"></td>
+                    <td><textarea id="reason8"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB09</td>
+                    <td>Janani kamatchi S</td>
+                    <td><input type="radio" name="attendance9" value="present" onclick="disableReason(9)"></td>
+                    <td><input type="radio" name="attendance9" value="absent" onclick="enableReason(9)"></td>
+                    <td><input type="radio" name="attendance9" value="leave" onclick="enableReason(9)"></td>
+                    <td><input type="radio" name="attendance9" value="onduty" onclick="enableReason(9)"></td>
+                    <td><textarea id="reason9"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB10</td>
+                    <td>Jeevajothi M</td>
+                    <td><input type="radio" name="attendance10" value="present" onclick="disableReason(10)"></td>
+                    <td><input type="radio" name="attendance10" value="absent" onclick="enableReason(10)"></td>
+                    <td><input type="radio" name="attendance10" value="leave" onclick="enableReason(10)"></td>
+                    <td><input type="radio" name="attendance10" value="onduty" onclick="enableReason(10)"></td>
+                    <td><textarea id="reason10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB11</td>
+                    <td>Jeyashree K A</td>
+                    <td><input type="radio" name="attendance11" value="present" onclick="disableReason(11)"></td>
+                    <td><input type="radio" name="attendance11" value="absent" onclick="enableReason(11)"></td>
+                    <td><input type="radio" name="attendance11" value="leave" onclick="enableReason(11)"></td>
+                    <td><input type="radio" name="attendance11" value="onduty" onclick="enableReason(11)"></td>
+                    <td><textarea id="reason11"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB12</td>
+                    <td>Kannika G</td>
+                    <td><input type="radio" name="attendance12" value="present" onclick="disableReason(12)"></td>
+                    <td><input type="radio" name="attendance12" value="absent" onclick="enableReason(12)"></td>
+                    <td><input type="radio" name="attendance12" value="leave" onclick="enableReason(12)"></td>
+                    <td><input type="radio" name="attendance12" value="onduty" onclick="enableReason(12)"></td>
+                    <td><textarea id="reason12"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB13</td>
+                    <td>Karishma S</td>
+                    <td><input type="radio" name="attendance13" value="present" onclick="disableReason(13)"></td>
+                    <td><input type="radio" name="attendance13" value="absent" onclick="enableReason(13)"></td>
+                    <td><input type="radio" name="attendance13" value="leave" onclick="enableReason(13)"></td>
+                    <td><input type="radio" name="attendance13" value="onduty" onclick="enableReason(13)"></td>
+                    <td><textarea id="reason13"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB14</td>
+                    <td>Kavitha M</td>
+                    <td><input type="radio" name="attendance14" value="present" onclick="disableReason(14)"></td>
+                    <td><input type="radio" name="attendance14" value="absent" onclick="enableReason(14)"></td>
+                    <td><input type="radio" name="attendance14" value="leave" onclick="enableReason(14)"></td>
+                    <td><input type="radio" name="attendance14" value="onduty" onclick="enableReason(14)"></td>
+                    <td><textarea id="reason14"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB16</td>
+                    <td>Keerthiga TS</td>
+                    <td><input type="radio" name="attendance15" value="present" onclick="disableReason(15)"></td>
+                    <td><input type="radio" name="attendance15" value="absent" onclick="enableReason(15)"></td>
+                    <td><input type="radio" name="attendance15" value="leave" onclick="enableReason(15)"></td>
+                    <td><input type="radio" name="attendance15" value="onduty" onclick="enableReason(15)"></td>
+                    <td><textarea id="reason15"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB17</td>
+                    <td>Keerthiga K</td>
+                    <td><input type="radio" name="attendance16" value="present" onclick="disableReason(16)"></td>
+                    <td><input type="radio" name="attendance16" value="absent" onclick="enableReason(16)"></td>
+                    <td><input type="radio" name="attendance16" value="leave" onclick="enableReason(16)"></td>
+                    <td><input type="radio" name="attendance16" value="onduty" onclick="enableReason(16)"></td>
+                    <td><textarea id="reason16"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB18</td>
+                    <td>Manasa Asvitha C K M</td>
+                    <td><input type="radio" name="attendance17" value="present" onclick="disableReason(17)"></td>
+                    <td><input type="radio" name="attendance17" value="absent" onclick="enableReason(17)"></td>
+                    <td><input type="radio" name="attendance17" value="leave" onclick="enableReason(17)"></td>
+                    <td><input type="radio" name="attendance17" value="onduty" onclick="enableReason(17)"></td>
+                    <td><textarea id="reason17"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB19</td>
+                    <td>Mansha T R</td>
+                    <td><input type="radio" name="attendance18" value="present" onclick="disableReason(18)"></td>
+                    <td><input type="radio" name="attendance18" value="absent" onclick="enableReason(18)"></td>
+                    <td><input type="radio" name="attendance18" value="leave" onclick="enableReason(18)"></td>
+                    <td><input type="radio" name="attendance18" value="onduty" onclick="enableReason(18)"></td>
+                    <td><textarea id="reason18"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB20</td>
+                    <td>Naga Harini M</td>
+                    <td><input type="radio" name="attendance19" value="present" onclick="disableReason(19)"></td>
+                    <td><input type="radio" name="attendance19" value="absent" onclick="enableReason(19)"></td>
+                    <td><input type="radio" name="attendance19" value="leave" onclick="enableReason(19)"></td>
+                    <td><input type="radio" name="attendance19" value="onduty" onclick="enableReason(19)"></td>
+                    <td><textarea id="reason19"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB21</td>
+                    <td>Priyadharshini M</td>
+                    <td><input type="radio" name="attendance20" value="present" onclick="disableReason(20)"></td>
+                    <td><input type="radio" name="attendance20" value="absent" onclick="enableReason(20)"></td>
+                    <td><input type="radio" name="attendance20" value="leave" onclick="enableReason(20)"></td>
+                    <td><input type="radio" name="attendance20" value="onduty" onclick="enableReason(20)"></td>
+                    <td><textarea id="reason20"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB22</td>
+                    <td>Rajadharshini R</td>
+                    <td><input type="radio" name="attendance21" value="present" onclick="disableReason(21)"></td>
+                    <td><input type="radio" name="attendance21" value="absent" onclick="enableReason(21)"></td>
+                    <td><input type="radio" name="attendance21" value="leave" onclick="enableReason(21)"></td>
+                    <td><input type="radio" name="attendance21" value="onduty" onclick="enableReason(21)"></td>
+                    <td><textarea id="reason21"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB23</td>
+                    <td>Raksana V</td>
+                    <td><input type="radio" name="attendance22" value="present" onclick="disableReason(22)"></td>
+                    <td><input type="radio" name="attendance22" value="absent" onclick="enableReason(22)"></td>
+                    <td><input type="radio" name="attendance22" value="leave" onclick="enableReason(22)"></td>
+                    <td><input type="radio" name="attendance22" value="onduty" onclick="enableReason(22)"></td>
+                    <td><textarea id="reason22"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB24</td>
+                    <td>Shree Vikhashini J</td>
+                    <td><input type="radio" name="attendance23" value="present" onclick="disableReason(23)"></td>
+                    <td><input type="radio" name="attendance23" value="absent" onclick="enableReason(23)"></td>
+                    <td><input type="radio" name="attendance23" value="leave" onclick="enableReason(23)"></td>
+                    <td><input type="radio" name="attendance23" value="onduty" onclick="enableReason(23)"></td>
+                    <td><textarea id="reason23"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB25</td>
+                    <td>Susmitha T</td>
+                    <td><input type="radio" name="attendance24" value="present" onclick="disableReason(24)"></td>
+                    <td><input type="radio" name="attendance24" value="absent" onclick="enableReason(24)"></td>
+                    <td><input type="radio" name="attendance24" value="leave" onclick="enableReason(24)"></td>
+                    <td><input type="radio" name="attendance24" value="onduty" onclick="enableReason(24)"></td>
+                    <td><textarea id="reason24"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB26</td>
+                    <td>Vaishnavi S</td>
+                    <td><input type="radio" name="attendance25" value="present" onclick="disableReason(25)"></td>
+                    <td><input type="radio" name="attendance25" value="absent" onclick="enableReason(25)"></td>
+                    <td><input type="radio" name="attendance25" value="leave" onclick="enableReason(25)"></td>
+                    <td><input type="radio" name="attendance25" value="onduty" onclick="enableReason(25)"></td>
+                    <td><textarea id="reason25"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB27</td>
+                    <td>Vikasni T R</td>
+                    <td><input type="radio" name="attendance26" value="present" onclick="disableReason(26)"></td>
+                    <td><input type="radio" name="attendance26" value="absent" onclick="enableReason(26)"></td>
+                    <td><input type="radio" name="attendance26" value="leave" onclick="enableReason(26)"></td>
+                    <td><input type="radio" name="attendance26" value="onduty" onclick="enableReason(26)"></td>
+                    <td><textarea id="reason26"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB28</td>
+                    <td>Vishnu Priya T K</td>
+                    <td><input type="radio" name="attendance27" value="present" onclick="disableReason(27)"></td>
+                    <td><input type="radio" name="attendance27" value="absent" onclick="enableReason(27)"></td>
+                    <td><input type="radio" name="attendance27" value="leave" onclick="enableReason(27)"></td>
+                    <td><input type="radio" name="attendance27" value="onduty" onclick="enableReason(27)"></td>
+                    <td><textarea id="reason27"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB29</td>
+                    <td>Yamuna R</td>
+                    <td><input type="radio" name="attendance28" value="present" onclick="disableReason(28)"></td>
+                    <td><input type="radio" name="attendance28" value="absent" onclick="enableReason(28)"></td>
+                    <td><input type="radio" name="attendance28" value="leave" onclick="enableReason(28)"></td>
+                    <td><input type="radio" name="attendance28" value="onduty" onclick="enableReason(28)"></td>
+                    <td><textarea id="reason28"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB30</td>
+                    <td>Yuvasri R</td>
+                    <td><input type="radio" name="attendance29" value="present" onclick="disableReason(29)"></td>
+                    <td><input type="radio" name="attendance29" value="absent" onclick="enableReason(29)"></td>
+                    <td><input type="radio" name="attendance29" value="leave" onclick="enableReason(29)"></td>
+                    <td><input type="radio" name="attendance29" value="onduty" onclick="enableReason(29)"></td>
+                    <td><textarea id="reason29"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB31</td>
+                    <td>Abishek Guhan P</td>
+                    <td><input type="radio" name="attendance30" value="present" onclick="disableReason(30)"></td>
+                    <td><input type="radio" name="attendance30" value="absent" onclick="enableReason(30)"></td>
+                    <td><input type="radio" name="attendance30" value="leave" onclick="enableReason(30)"></td>
+                    <td><input type="radio" name="attendance30" value="onduty" onclick="enableReason(30)"></td>
+                    <td><textarea id="reason30"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB32</td>
+                    <td>Achuthan T B</td>
+                    <td><input type="radio" name="attendance31" value="present" onclick="disableReason(31)"></td>
+                    <td><input type="radio" name="attendance31" value="absent" onclick="enableReason(31)"></td>
+                    <td><input type="radio" name="attendance31" value="leave" onclick="enableReason(31)"></td>
+                    <td><input type="radio" name="attendance31" value="onduty" onclick="enableReason(31)"></td>
+                    <td><textarea id="reason31"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB33</td>
+                    <td>Adithya T B</td>
+                    <td><input type="radio" name="attendance32" value="present" onclick="disableReason(32)"></td>
+                    <td><input type="radio" name="attendance32" value="absent" onclick="enableReason(32)"></td>
+                    <td><input type="radio" name="attendance32" value="leave" onclick="enableReason(32)"></td>
+                    <td><input type="radio" name="attendance32" value="onduty" onclick="enableReason(32)"></td>
+                    <td><textarea id="reason32"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB34</td>
+                    <td>Agilesh K K</td>
+                    <td><input type="radio" name="attendance33" value="present" onclick="disableReason(33)"></td>
+                    <td><input type="radio" name="attendance33" value="absent" onclick="enableReason(33)"></td>
+                    <td><input type="radio" name="attendance33" value="leave" onclick="enableReason(33)"></td>
+                    <td><input type="radio" name="attendance33" value="onduty" onclick="enableReason(33)"></td>
+                    <td><textarea id="reason33"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB35</td>
+                    <td>Dakshin B</td>
+                    <td><input type="radio" name="attendance34" value="present" onclick="disableReason(34)"></td>
+                    <td><input type="radio" name="attendance34" value="absent" onclick="enableReason(34)"></td>
+                    <td><input type="radio" name="attendance34" value="leave" onclick="enableReason(34)"></td>
+                    <td><input type="radio" name="attendance34" value="onduty" onclick="enableReason(34)"></td>
+                    <td><textarea id="reason34"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB36</td>
+                    <td>Jayakanth S</td>
+                    <td><input type="radio" name="attendance35" value="present" onclick="disableReason(35)"></td>
+                    <td><input type="radio" name="attendance35" value="absent" onclick="enableReason(35)"></td>
+                    <td><input type="radio" name="attendance35" value="leave" onclick="enableReason(35)"></td>
+                    <td><input type="radio" name="attendance35" value="onduty" onclick="enableReason(35)"></td>
+                    <td><textarea id="reason35"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB37</td>
+                    <td>Karuppasamy M</td>
+                    <td><input type="radio" name="attendance36" value="present" onclick="disableReason(36)"></td>
+                    <td><input type="radio" name="attendance36" value="absent" onclick="enableReason(36)"></td>
+                    <td><input type="radio" name="attendance36" value="leave" onclick="enableReason(36)"></td>
+                    <td><input type="radio" name="attendance36" value="onduty" onclick="enableReason(36)"></td>
+                    <td><textarea id="reason36"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB38</td>
+                    <td>Kishore T S</td>
+                    <td><input type="radio" name="attendance37" value="present" onclick="disableReason(37)"></td>
+                    <td><input type="radio" name="attendance37" value="absent" onclick="enableReason(37)"></td>
+                    <td><input type="radio" name="attendance37" value="leave" onclick="enableReason(37)"></td>
+                    <td><input type="radio" name="attendance37" value="onduty" onclick="enableReason(37)"></td>
+                    <td><textarea id="reason37"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB39</td>
+                    <td>Logesh kumar M</td>
+                    <td><input type="radio" name="attendance38" value="present" onclick="disableReason(38)"></td>
+                    <td><input type="radio" name="attendance38" value="absent" onclick="enableReason(38)"></td>
+                    <td><input type="radio" name="attendance38" value="leave" onclick="enableReason(38)"></td>
+                    <td><input type="radio" name="attendance38" value="onduty" onclick="enableReason(38)"></td>
+                    <td><textarea id="reason38"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB40</td>
+                    <td>Manavendra Shailesh A</td>
+                    <td><input type="radio" name="attendance39" value="present" onclick="disableReason(39)"></td>
+                    <td><input type="radio" name="attendance39" value="absent" onclick="enableReason(39)"></td>
+                    <td><input type="radio" name="attendance39" value="leave" onclick="enableReason(39)"></td>
+                    <td><input type="radio" name="attendance39" value="onduty" onclick="enableReason(39)"></td>
+                    <td><textarea id="reason39"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB41</td>
+                    <td>Mugesh Bala M</td>
+                    <td><input type="radio" name="attendance40" value="present" onclick="disableReason(40)"></td>
+                    <td><input type="radio" name="attendance40" value="absent" onclick="enableReason(40)"></td>
+                    <td><input type="radio" name="attendance40" value="leave" onclick="enableReason(40)"></td>
+                    <td><input type="radio" name="attendance40" value="onduty" onclick="enableReason(40)"></td>
+                    <td><textarea id="reason40"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB42</td>
+                    <td>Muhammad Yahyaa R</td>
+                    <td><input type="radio" name="attendance41" value="present" onclick="disableReason(41)"></td>
+                    <td><input type="radio" name="attendance41" value="absent" onclick="enableReason(41)"></td>
+                    <td><input type="radio" name="attendance41" value="leave" onclick="enableReason(41)"></td>
+                    <td><input type="radio" name="attendance41" value="onduty" onclick="enableReason(41)"></td>
+                    <td><textarea id="reason41"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB43</td>
+                    <td>Mutheeswaran R</td>
+                    <td><input type="radio" name="attendance42" value="present" onclick="disableReason(42)"></td>
+                    <td><input type="radio" name="attendance42" value="absent" onclick="enableReason(42)"></td>
+                    <td><input type="radio" name="attendance42" value="leave" onclick="enableReason(42)"></td>
+                    <td><input type="radio" name="attendance42" value="onduty" onclick="enableReason(42)"></td>
+                    <td><textarea id="reason42"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB44</td>
+                    <td>Muthunilavan D</td>
+                    <td><input type="radio" name="attendance43" value="present" onclick="disableReason(43)"></td>
+                    <td><input type="radio" name="attendance43" value="absent" onclick="enableReason(43)"></td>
+                    <td><input type="radio" name="attendance43" value="leave" onclick="enableReason(43)"></td>
+                    <td><input type="radio" name="attendance43" value="onduty" onclick="enableReason(43)"></td>
+                    <td><textarea id="reason43"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB45</td>
+                    <td>Nagavishnu Karthik B S</td>
+                    <td><input type="radio" name="attendance44" value="present" onclick="disableReason(44)"></td>
+                    <td><input type="radio" name="attendance44" value="absent" onclick="enableReason(44)"></td>
+                    <td><input type="radio" name="attendance44" value="leave" onclick="enableReason(44)"></td>
+                    <td><input type="radio" name="attendance44" value="onduty" onclick="enableReason(44)"></td>
+                    <td><textarea id="reason44"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB46</td>
+                    <td>Peniel Osborn J</td>
+                    <td><input type="radio" name="attendance45" value="present" onclick="disableReason(45)"></td>
+                    <td><input type="radio" name="attendance45" value="absent" onclick="enableReason(45)"></td>
+                    <td><input type="radio" name="attendance45" value="leave" onclick="enableReason(45)"></td>
+                    <td><input type="radio" name="attendance45" value="onduty" onclick="enableReason(45)"></td>
+                    <td><textarea id="reason45"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB48</td>
+                    <td>Pranav Hari T N</td>
+                    <td><input type="radio" name="attendance46" value="present" onclick="disableReason(46)"></td>
+                    <td><input type="radio" name="attendance46" value="absent" onclick="enableReason(46)"></td>
+                    <td><input type="radio" name="attendance46" value="leave" onclick="enableReason(46)"></td>
+                    <td><input type="radio" name="attendance46" value="onduty" onclick="enableReason(46)"></td>
+                    <td><textarea id="reason46"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB49</td>
+                    <td>Prawin Kumar M</td>
+                    <td><input type="radio" name="attendance47" value="present" onclick="disableReason(47)"></td>
+                    <td><input type="radio" name="attendance47" value="absent" onclick="enableReason(47)"></td>
+                    <td><input type="radio" name="attendance47" value="leave" onclick="enableReason(47)"></td>
+                    <td><input type="radio" name="attendance47" value="onduty" onclick="enableReason(47)"></td>
+                    <td><textarea id="reason47"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB50</td>
+                    <td>Rohan Gandhi S</td>
+                    <td><input type="radio" name="attendance48" value="present" onclick="disableReason(48)"></td>
+                    <td><input type="radio" name="attendance48" value="absent" onclick="enableReason(48)"></td>
+                    <td><input type="radio" name="attendance48" value="leave" onclick="enableReason(48)"></td>
+                    <td><input type="radio" name="attendance48" value="onduty" onclick="enableReason(48)"></td>
+                    <td><textarea id="reason48"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB51</td>
+                    <td>Shanmugapiriyan M</td>
+                    <td><input type="radio" name="attendance49" value="present" onclick="disableReason(49)"></td>
+                    <td><input type="radio" name="attendance49" value="absent" onclick="enableReason(49)"></td>
+                    <td><input type="radio" name="attendance49" value="leave" onclick="enableReason(49)"></td>
+                    <td><input type="radio" name="attendance49" value="onduty" onclick="enableReason(49)"></td>
+                    <td><textarea id="reason49"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB52</td>
+                    <td>Shiveshwar S</td>
+                    <td><input type="radio" name="attendance50" value="present" onclick="disableReason(50)"></td>
+                    <td><input type="radio" name="attendance50" value="absent" onclick="enableReason(50)"></td>
+                    <td><input type="radio" name="attendance50" value="leave" onclick="enableReason(50)"></td>
+                    <td><input type="radio" name="attendance50" value="onduty" onclick="enableReason(50)"></td>
+                    <td><textarea id="reason50"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB53</td>
+                    <td>Shyaam Sundar P C M</td>
+                    <td><input type="radio" name="attendance51" value="present" onclick="disableReason(51)"></td>
+                    <td><input type="radio" name="attendance51" value="absent" onclick="enableReason(51)"></td>
+                    <td><input type="radio" name="attendance51" value="leave" onclick="enableReason(51)"></td>
+                    <td><input type="radio" name="attendance51" value="onduty" onclick="enableReason(51)"></td>
+                    <td><textarea id="reason51"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB54</td>
+                    <td>Siva Subramani S</td>
+                    <td><input type="radio" name="attendance52" value="present" onclick="disableReason(52)"></td>
+                    <td><input type="radio" name="attendance52" value="absent" onclick="enableReason(52)"></td>
+                    <td><input type="radio" name="attendance52" value="leave" onclick="enableReason(52)"></td>
+                    <td><input type="radio" name="attendance52" value="onduty" onclick="enableReason(52)"></td>
+                    <td><textarea id="reason52"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB55</td>
+                    <td>Sree Krishna K N</td>
+                    <td><input type="radio" name="attendance53" value="present" onclick="disableReason(53)"></td>
+                    <td><input type="radio" name="attendance53" value="absent" onclick="enableReason(53)"></td>
+                    <td><input type="radio" name="attendance53" value="leave" onclick="enableReason(53)"></td>
+                    <td><input type="radio" name="attendance53" value="onduty" onclick="enableReason(53)"></td>
+                    <td><textarea id="reason53"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB56</td>
+                    <td>Suraj G V</td>
+                    <td><input type="radio" name="attendance54" value="present" onclick="disableReason(54)"></td>
+                    <td><input type="radio" name="attendance54" value="absent" onclick="enableReason(54)"></td>
+                    <td><input type="radio" name="attendance54" value="leave" onclick="enableReason(54)"></td>
+                    <td><input type="radio" name="attendance54" value="onduty" onclick="enableReason(54)"></td>
+                    <td><textarea id="reason54"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB57</td>
+                    <td>Surya Prakash S</td>
+                    <td><input type="radio" name="attendance55" value="present" onclick="disableReason(55)"></td>
+                    <td><input type="radio" name="attendance55" value="absent" onclick="enableReason(55)"></td>
+                    <td><input type="radio" name="attendance55" value="leave" onclick="enableReason(55)"></td>
+                    <td><input type="radio" name="attendance55" value="onduty" onclick="enableReason(55)"></td>
+                    <td><textarea id="reason55"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB58</td>
+                    <td>Surya S</td>
+                    <td><input type="radio" name="attendance56" value="present" onclick="disableReason(56)"></td>
+                    <td><input type="radio" name="attendance56" value="absent" onclick="enableReason(56)"></td>
+                    <td><input type="radio" name="attendance56" value="leave" onclick="enableReason(56)"></td>
+                    <td><input type="radio" name="attendance56" value="onduty" onclick="enableReason(56)"></td>
+                    <td><textarea id="reason56"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB59</td>
+                    <td>Vishal S</td>
+                    <td><input type="radio" name="attendance57" value="present" onclick="disableReason(57)"></td>
+                    <td><input type="radio" name="attendance57" value="absent" onclick="enableReason(57)"></td>
+                    <td><input type="radio" name="attendance57" value="leave" onclick="enableReason(57)"></td>
+                    <td><input type="radio" name="attendance57" value="onduty" onclick="enableReason(57)"></td>
+                    <td><textarea id="reason57"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB60</td>
+                    <td>Vishal J</td>
+                    <td><input type="radio" name="attendance58" value="present" onclick="disableReason(58)"></td>
+                    <td><input type="radio" name="attendance58" value="absent" onclick="enableReason(58)"></td>
+                    <td><input type="radio" name="attendance58" value="leave" onclick="enableReason(58)"></td>
+                    <td><input type="radio" name="attendance58" value="onduty" onclick="enableReason(58)"></td>
+                    <td><textarea id="reason58"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB61</td>
+                    <td>Vithesh T</td>
+                    <td><input type="radio" name="attendance59" value="present" onclick="disableReason(59)"></td>
+                    <td><input type="radio" name="attendance59" value="absent" onclick="enableReason(59)"></td>
+                    <td><input type="radio" name="attendance59" value="leave" onclick="enableReason(59)"></td>
+                    <td><input type="radio" name="attendance59" value="onduty" onclick="enableReason(59)"></td>
+                    <td><textarea id="reason59"></textarea></td>
+                </tr>
+                <tr>
+                    <td>23CSEB62</td>
+                    <td>Vivash V</td>
+                    <td><input type="radio" name="attendance60" value="present" onclick="disableReason(60)"></td>
+                    <td><input type="radio" name="attendance60" value="absent" onclick="enableReason(60)"></td>
+                    <td><input type="radio" name="attendance60" value="leave" onclick="enableReason(60)" ></td>
+                    <td><input type="radio" name="attendance60" value="onduty" onclick="enableReason(60)"></td>
+                    <td><textarea id="reason60"></textarea></td>
+                </tr>
+                <tr>
+                    <td>24LCSEB01</td>
+                    <td>Mukesh Kanna</td>
+                    <td><input type="radio" name="attendance61" value="present" onclick="disableReason(61)"></td>
+                    <td><input type="radio" name="attendance61" value="absent" onclick="enableReason(61)"></td>
+                    <td><input type="radio" name="attendance61" value="leave" onclick="enableReason(61)"></td>
+                    <td><input type="radio" name="attendance61" value="onduty" onclick="enableReason(61)"></td>
+                    <td><textarea id="reason61"></textarea></td>
+                </tr>
+                <tr>
+                    <td>24LCSEB02</td>
+                    <td>Santhosh</td>
+                    <td><input type="radio" name="attendance62" value="present" onclick="disableReason(62)"></td>
+                    <td><input type="radio" name="attendance62" value="absent" onclick="enableReason(62)"></td>
+                    <td><input type="radio" name="attendance62" value="leave" onclick="enableReason(62)"></td>
+                    <td><input type="radio" name="attendance62" value="onduty" onclick="enableReason(62)"></td>
+                    <td><textarea id="reason62"></textarea></td>
+                </tr>
+                <tr>
+                    <td>24LCSEB03</td>
+                    <td>Santhosh Kumar D</td>
+                    <td><input type="radio" name="attendance63" value="present" onclick="disableReason(63)"></td>
+                    <td><input type="radio" name="attendance63" value="absent" onclick="enableReason(63)"></td>
+                    <td><input type="radio" name="attendance63" value="leave" onclick="enableReason(63)"></td>
+                    <td><input type="radio" name="attendance63" value="onduty" onclick="enableReason(63)"></td>
+                    <td><textarea id="reason63"></textarea></td>
+                </tr>
+                <tr>
+                    <td>24LCSEB04</td>
+                    <td>Krishna Kumar</td>
+                    <td><input type="radio" name="attendance64" value="present" onclick="disableReason(64)"></td>
+                    <td><input type="radio" name="attendance64" value="absent" onclick="enableReason(64)"></td>
+                    <td><input type="radio" name="attendance64" value="leave" onclick="enableReason(64)"></td>
+                    <td><input type="radio" name="attendance64" value="onduty" onclick="enableReason(64)"></td>
+                    <td><textarea id="reason64"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+            
+        <button id="button">Submit</button>
+        </div>
+        <script src="attendance.js"></script>
+    </body>
+</html>
