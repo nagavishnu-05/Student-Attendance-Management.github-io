@@ -6,7 +6,7 @@ body, html{
 }           
 #absent{
     width: 1100px;
-    height: 800px;
+    height: 1000px;
     border: 5px solid white;
     border-color: white;
     position: relative;
@@ -108,4 +108,13 @@ th {
 }
 tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+a{
+    position: relative;
+    top: -150px;
+    left: 650px;
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+    font-size: 26px;
 }
