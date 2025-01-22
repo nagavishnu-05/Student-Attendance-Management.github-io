@@ -1,0 +1,103 @@
+body, html{
+  width: 98%;
+  height: 98%;
+  background-color: lightskyblue;
+  font-family: Great Vibes, cursive;
+}           
+#m-main{
+  width: 1100px;
+  height: 600px;
+  border: 5px solid white;
+  border-color: white;
+  position: relative;
+  left: 400px;
+}
+#m-vlogo{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 0px;
+  left: -400px;
+}
+#m-clogo{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 0px;
+  left: 400px;
+}
+#m-vcet{
+  position: relative;
+  top: -150px;
+  left: 0;  
+  font-size: 26px;
+  line-height: 1.4;
+  font-weight: bold;
+  font-family: Great Vibes, cursive;
+}
+#m-li{
+  position: relative;
+  top: 0px;
+}
+#m-dept{
+  position: relative;
+  top: -10px;
+  left: 0;  
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: bold;
+  font-family: Great Vibes, cursive;
+}
+#m-class{
+  position: relative;
+  top: -10px;
+  left: -400px;  
+  font-size: 25px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: Great Vibes, cursive;
+}
+#m-batch{
+  position: relative;
+  top: -63px;
+  left: 380px;  
+  font-size: 25px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: Great Vibes, cursive;
+}
+#m-display{
+  width: 600px;
+  height: 50px;
+  font-size: 35px;
+  position: relative;
+  line-height: 1.8;
+  top: -25px;
+  left: 300px;
+  color: red;
+}
+#m-side{
+  width: 300px;
+  height: 310px;
+  border-right: 5px solid white;
+  border-right-color: white;
+  position: relative;
+  top: -135px;
+}
+.m-sbar{
+  position: relative;
+  top: 0;
+  width: 293px;
+  height: 55px;
+  background-color: lightskyblue;
+  font-size: 26px;
+  padding-left: 0px;
+  font-weight: bolder;
+}
+.m-a{
+  color: red;
+  text-decoration: none;
+  position: relative;
+  top: 40px;
+  left: 0px;
+}

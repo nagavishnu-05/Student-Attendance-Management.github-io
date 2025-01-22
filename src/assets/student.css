@@ -1,0 +1,111 @@
+body, html{
+    width: 98%;
+    height: 98%;
+    background-color: lightskyblue;
+    font-family: Great Vibes, cursive;
+}    
+#stu-main{
+    width: 1100px;
+    height: 1000px;
+    border: 5px solid white;
+    border-color: white;
+    position: relative;
+    top: 0px;
+    left: 400px;
+}
+#stu-vlogo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0px;
+    left: -400px;
+}
+#stu-clogo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0px;
+    left: 400px;
+}
+#stu-vcet{
+    position: relative;
+    top: -150px;
+    left: 0;  
+    font-size: 26px;
+    line-height: 1.4;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#stu-dept{
+    position: relative;
+    top: -10px;
+    left: 0;  
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#stu-class{
+    position: relative;
+    top: -10px;
+    left: -400px;  
+    font-size: 25px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#stu-batch{
+    position: relative;
+    top: -63px;
+    left: 380px;  
+    font-size: 25px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#stu-hr{
+    position: relative;
+    top: 0px;
+}
+#stu-student{
+    position: relative;
+    top: -50px;
+    left: 0;
+}
+#stu-table{
+    border: 3px solid black;
+    position: relative;
+    top: -20px;
+    left: 50px;
+    font-size: 25px;
+    width: 1000px;
+}
+.stu-th{
+    width: 50px;
+    height: 15px;
+    font-weight: normal;
+    font-size: 25px;
+    background-color: darkblue;
+    color: white;
+}
+.stu-td{
+    width: 50px;
+    height: 15px;
+    font-weight: lighter;
+    position: relative;
+    left: 0px; 
+}
+.m-h2{
+    position: relative;
+    top: 0px;
+    left: -200px;
+    color: white;
+}
+#m-anc{
+    color: red;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    top: -115px;
+    left: 300px;
+}

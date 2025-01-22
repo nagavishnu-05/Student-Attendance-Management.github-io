@@ -1,0 +1,125 @@
+body, html{
+    width: 98%;
+    height: 98%;
+    background-color: lightskyblue;
+    font-family: Great Vibes, cursive;
+}           
+#absent{
+    width: 1100px;
+    height: 1000px;
+    border: 5px solid white;
+    border-color: white;
+    position: relative;
+    left: 400px;
+}
+#ab-vlogo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0px;
+    left: -400px;
+}
+#ab-clogo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0px;
+    left: 400px;
+}
+#ab-vcet{
+    position: relative;
+    top: -150px;
+    left: 0;  
+    font-size: 26px;
+    line-height: 1.4;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#ab-dept{
+    position: relative;
+    top: -10px;
+    left: 0;  
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#ab-class{
+    position: relative;
+    top: -10px;
+    left: -400px;  
+    font-size: 25px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#ab-batch{
+    position: relative;
+    top: -63px;
+    left: 380px;  
+    font-size: 25px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: Great Vibes, cursive;
+}
+#ab-li{
+    position: relative;
+    top: 0;
+}
+#ab{
+    position: relative;
+    top: -55px;
+    left: 0;  
+    color: black;
+    font-weight: bold;
+}
+#ab-date{
+    position: relative;
+    left: -420px;
+    top: -60px;
+    color: black;
+    font-weight: normal;
+}
+#ab-hr{
+    position: relative;
+    top: -113px;
+    left: -75px;
+    color: black;
+    font-weight: normal;
+}
+#ab-staff{
+    position: relative;
+    top: -165px;
+    left: 325px;
+    color: black;
+    font-weight: normal;
+}
+#ab-table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    top: -180px;
+    background-color: white;
+}
+.ab-th, .ab-td {
+    border: 2px solid black;
+    padding: 12px;
+    text-align: center;
+    color: black;
+}
+.ab-th {
+    background-color: lightskyblue;
+    font-weight: bold;
+}
+.ab-tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+#ab-a{
+    position: relative;
+    top: 300px;
+    left: 300px;
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+    font-size: 26px;
+}
